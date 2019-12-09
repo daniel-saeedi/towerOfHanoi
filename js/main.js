@@ -43,6 +43,27 @@ HanoiTower.prototype.initialize = function()
 			alert("Please fill the inputs correctly!");
 		}
 	});
+
+	$(".submit").on("tap",function(){
+		if($("#disks").val() != null && $("#speed").val() != 0 && $("#disks").val() <= 12){
+			$this.speed = $("#speed").val();
+			$this.disks = $("#disks").val();
+
+			$(".form").hide();
+
+			$this.createDisk();
+
+			$this.solver($this.disks,"a","c","b");
+
+			$this.animation();
+	    }
+	    else if($("#disks").val() > 12){
+	        alert('number of disks should be less than 12');
+	    }
+        else{
+			alert("Please fill the inputs correctly!");
+		}
+	});
 }
 
 HanoiTower.prototype.solver = async function(n,start,end,auxiliary)

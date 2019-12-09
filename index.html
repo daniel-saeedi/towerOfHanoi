@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tower of Hanoi</title>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="form">
+		<input type="number" id="disks" placeholder="How many disks?" class="input">
+		<br>
+		<select id="speed">
+			<option value="0">Speed</option>
+			<option value="1">Slow</option>
+			<option value="2">Fast</option>
+		</select>
+		<br><br>
+		<button class="submit">Start!</button>
+</div>
+<div class="container">
+	<div class="placeHolder">
+
+		<div class="peg"></div>
+
+		<div id="a" class="disks">
+		</div>
+
+		<div class="ground"></div>
+	</div>
+
+	<div class="placeHolder">
+
+		<div class="peg"></div>
+
+		<div id="b" class="disks">
+		</div>
+
+		<div class="ground"></div>
+	</div>
+
+	<div class="placeHolder">
+
+		<div class="peg"></div>
+
+		<div id="c" class="disks">
+		</div>
+
+		<div class="ground"></div>
+	</div>
+</div>
+</body>
+</html>
